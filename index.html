@@ -84,7 +84,11 @@ async function login(){
 let user=document.getElementById("user").value
 let pass=document.getElementById("pass").value
 
-const realUser="Clove"
+if(user==="Clove" && pass==="Lafsal4"){
+window.location="upload.html"
+}else{
+document.getElementById("msg").innerText="Acceso denegado"
+}
 
 const realHash="b1a96dd646bccaa24cef7a3db22a6f9959e3d64c2dcb7e3f1f7baf5120a4d700"
 
